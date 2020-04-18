@@ -1,9 +1,9 @@
 /* eslint-env node, mocha */
 import * as assert from 'assert'
-import { sodium } from './sodium'
+import { sodium } from './sodium.mjs'
 
-import { Chain, Channel, Identity } from '../'
-import { now } from '../lib/utils'
+import { Chain, Channel, Identity } from '../lib/protocol.mjs'
+import { now } from '../lib/utils.mjs'
 
 describe('Chain', () => {
   let idA = null

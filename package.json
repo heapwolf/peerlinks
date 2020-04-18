@@ -2,7 +2,7 @@
   "name": "@peerlinks/protocol",
   "version": "7.4.3",
   "description": "PeerLinks Protocol implementation",
-  "main": "lib/protocol.js",
+  "main": "lib/protocol.mjs",
   "scripts": {
     "compile-proto": "pbjs --es6 -w es6 -t static-module lib/messages.proto -o lib/messages.js",
     "lint": "standard lib test",
