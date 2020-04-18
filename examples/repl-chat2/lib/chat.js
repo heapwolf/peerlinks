@@ -1,3 +1,4 @@
+import { Buffer } from 'buffer'
 import * as sodium from 'sodium-native'
 import * as bs58 from 'bs58'
 
@@ -105,7 +106,8 @@ export default class Chat {
     }
 
     const body = Message.json({ text })
-    await this.channel.post(body, this.identity)
+    const message = await this.channel.post(body, this.identity)
+
     await this.displayChannel()
 
     return '(successfully posted message)'

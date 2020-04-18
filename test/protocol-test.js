@@ -1,6 +1,6 @@
 /* eslint-env node, mocha */
 import * as assert from 'assert'
-import * as sodium from 'sodium-native'
+import { sodium } from './sodium'
 
 import Protocol, { Channel, Message } from '../'
 
