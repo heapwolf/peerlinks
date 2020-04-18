@@ -1,5 +1,5 @@
 import { Buffer } from 'buffer';
-import * as sodium from 'sodium-universal';
+import * as sodium from 'sodium-native';
 import * as bs58 from 'bs58';
 
 import Protocol, { Message }from '@peerlinks/protocol';
