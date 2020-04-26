@@ -17,12 +17,10 @@ async function main () {
     }
   })
 
-  const storage = new Storage({
-    file: 'chat.sqlite',
-    trace: !!process.env.PEERLINKS_TRACE_DB
-  })
+  const storage = new Storage({})
 
-  await storage.open()
+  const instance = process.env.INST || 0
+  await storage.open(`./data-${instance}.level`)
 
   io.on('exit', () => {
     console.log('Saving...')
