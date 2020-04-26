@@ -1,9 +1,9 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { sodium } from './sodium.mjs'
+const assert = require('assert')
+const sodium = require('sodium-native')
 
-import { Chain, Channel, Identity } from '../lib/protocol.mjs'
-import { now } from '../lib/utils.mjs'
+const { Chain, Channel, Identity } = require('../lib/protocol')
+const { now } = require('../lib/utils')
 
 describe('Chain', () => {
   let idA = null

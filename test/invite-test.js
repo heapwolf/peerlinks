@@ -1,9 +1,8 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { sodium } from './sodium'
-import { Buffer } from 'buffer'
+const assert = require('assert')
+const sodium = require('sodium-native')
 
-import { Channel, Identity, Message } from '../'
+const { Channel, Identity, Message } = require('../')
 
 describe('Invite', () => {
   let issuer = null

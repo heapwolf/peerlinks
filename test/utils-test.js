@@ -1,8 +1,6 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { Buffer } from 'buffer'
-
-import * as utils from '../lib/utils'
+const assert = require('assert')
+const utils = require('../lib/utils')
 
 describe('utils', () => {
   describe('compareDistance()', () => {

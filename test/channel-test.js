@@ -1,12 +1,11 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { Buffer } from 'buffer'
-import { sodium } from './sodium'
+const assert = require('assert')
+const sodium = require('sodium-native')
 
-import { Chain, Channel, Identity, Message } from '../'
-import { now } from '../lib/utils'
+const { Chain, Channel, Identity, Message } = require('../')
+const { now } = require('../lib/utils')
 
-import DelayStorage from './fixtures/delay-storage'
+const DelayStorage = require('./fixtures/delay-storage')
 
 describe('Channel', () => {
   let identity = null

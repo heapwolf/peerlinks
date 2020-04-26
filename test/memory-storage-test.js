@@ -1,9 +1,8 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { Buffer } from 'buffer'
-import { randomBytes } from 'crypto'
+const assert = require('assert')
+const { randomBytes } = require('crypto')
 
-import { MemoryStorage } from '../'
+const { MemoryStorage } = require('../')
 
 describe('MemoryStorage', () => {
   let channelId = null

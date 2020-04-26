@@ -1,9 +1,9 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { sodium } from './sodium'
+const assert = require('assert')
+const sodium = require('sodium-native')
 
-import { now } from '../lib/utils'
-import { Chain, Channel, Identity, Message } from '../'
+const { now } = require('../lib/utils')
+const { Chain, Channel, Identity, Message } = require('../')
 
 describe('Identity', () => {
   it('should be serialized/deserialized with chain', async () => {

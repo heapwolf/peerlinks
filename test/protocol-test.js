@@ -1,10 +1,14 @@
 /* eslint-env node, mocha */
-import * as assert from 'assert'
-import { sodium } from './sodium'
+const assert = require('assert')
+const sodium = require('sodium-native')
 
-import Protocol, { Channel, Message } from '../'
+const {
+  Channel,
+  Message,
+  Protocol
+} = require('../')
 
-import Socket from './fixtures/socket'
+const Socket = require('./fixtures/socket')
 
 describe('Protocol', () => {
   let a = null
