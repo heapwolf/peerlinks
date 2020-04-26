@@ -1,14 +1,14 @@
-import * as sodium from 'sodium-native'
-import * as bs58 from 'bs58'
+const sodium = require('sodium-native')
+const bs58 = require('bs58')
 
-import Protocol, { Message } from '../../..'
-import Swarm from '@peerlinks/swarm'
+const { Protocol, Message } = require('../../..')
+const Swarm = require('@peerlinks/swarm')
 
 const DISPLAY_COUNT = 30
 
 const INVITE_TIMEOUT = 15 * 60 * 1000 // 15 minutes
 
-export default class Chat {
+module.exports = class Chat {
   constructor (repl, storage) {
     this.repl = repl
     this.repl.setPrompt('> ')

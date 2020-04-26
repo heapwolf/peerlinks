@@ -1,9 +1,9 @@
-import * as repl from 'repl'
-import * as vm from 'vm'
+const repl = require('repl')
+const vm = require('vm')
 
-import Storage from '@peerlinks/sqlite-storage'
+const Storage = require('@peerlinks/level-storage')
 
-import Chat from '../'
+const Chat = require('../')
 
 async function main () {
   const io = repl.start({

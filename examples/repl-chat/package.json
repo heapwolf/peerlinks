@@ -4,7 +4,7 @@
   "private": true,
   "main": "lib/chat.js",
   "scripts": {
-    "start": "node -r esm bin/chat.js"
+    "start": "node bin/chat.js"
   },
   "keywords": [
     "peerlinks",
@@ -14,11 +14,10 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "@peerlinks/protocol": "^7.3.2",
-    "@peerlinks/sqlite-storage": "^3.0.0",
-    "@peerlinks/swarm": "^3.0.3",
+    "@peerlinks/level-storage": "github:heapwolf/peerlinks-level-storage",
+    "@peerlinks/protocol": "github:heapwolf/peerlinks",
+    "@peerlinks/swarm": "github:heapwolf/peerlinks-swarm",
     "bs58": "^4.0.1",
-    "esm": "^3.2.25",
     "sodium-universal": "^2.0.0"
   }
 }
