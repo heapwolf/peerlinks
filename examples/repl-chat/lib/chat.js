@@ -36,6 +36,7 @@ export default class Chat {
 
     const existing = this.protocol.getIdentity(name)
     let channel
+
     if (existing) {
       this.identity = existing
       channel = this.protocol.getChannel(name)
@@ -51,7 +52,7 @@ export default class Chat {
 
   async requestInvite () {
     if (!this.identity) {
-      throw new Error('`iam()` must be called first')
+      return { data: 'iam() must be called first' }
     }
 
     const { requestId, request, decrypt } = this.identity.requestInvite(
