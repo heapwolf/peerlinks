@@ -1,6 +1,6 @@
 {
   "name": "@peerlinks/protocol",
-  "version": "7.4.3",
+  "version": "7.4.4",
   "description": "PeerLinks Protocol implementation",
   "main": "lib/protocol.js",
   "scripts": {
@@ -39,7 +39,6 @@
   "devDependencies": {
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "sodium-universal": "^2.0.0",
     "standard": "^14.3.3"
   }
 }
